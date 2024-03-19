@@ -166,7 +166,7 @@ html {
 	}
 
 	&::-webkit-scrollbar-thumb {
-		background-color: #da1a00;
+		background-color: #866f6c;
 		width: 3px;
 	}
 }
@@ -177,8 +177,22 @@ html {
 }
 body {
 	font-family: "Montserrat", sans-serif;
-	background: #e5e5e5;
+	background: #fff;
 }
 .wrapper {
 	overflow: hidden;
+}
+
+// main_btn
+.main_btn {
+	a {
+		padding: 14px 40px;
+		color: rgb(255, 255, 255);
+		font-size: 17.38px;
+		font-weight: 700;
+		line-height: 21px;
+		text-transform: uppercase;
+		border-radius: 86.9px;
+		background: rgb(0, 99, 71);
+	}
 }

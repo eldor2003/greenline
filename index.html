@@ -26,36 +26,269 @@
     <div class="wrapper">
 
         <!-- header -->
-        <header class="header" id="header">
-            <div class="container">
-                <div class="header_block">
-                    <div class="header_logo">
-                        <a href="#">
-                            <img src="./images/header-logo.png" alt="">
-                        </a>
+        <main>
+            <header class="header" id="header">
+                <div class="container">
+                    <div class="header_top d-flex align-items-center justify-content-between">
+                        <div class="header_logo d-flex align-items-center ">
+                            <a href="#" class="hamburger">
+                                <img src="./assets/images/icons/header_hamburger.svg" alt="">
+                            </a>
+                            <a href="#">
+                                <img src="./assets/images/greenline_logo.svg" alt="">
+                            </a>
+                        </div>
+                        <div class="header_phone d-flex align-items-center">
+                            <img src="./assets/images/icons/header_phone.svg" alt="">
+                            <a href="tel:+88005555555">8 800 555 55 55</a>
+                        </div>
                     </div>
-                    <!-- hamburger_mobile -->
-                    <div class="hamurger_menu d-lg-none">
-                        <a href="#">
-                            <img src="./images/hamburger_menu.png" alt="">
-                        </a>
-                    </div>
-                    <ul class="header_menus">
-                        <span class="close d-lg-none">
-                            <i class="fs-3 fa-solid fa-xmark"></i>
-                        </span>
-                        <li><a href="#">После ремонта</a></li>
-                        <li><a href="#">Генеральная уборка</a></li>
-                        <li><a href="#">Регулярная уборка</a></li>
-                        <li><a href="#">Химчистка</a></li>
-                        <li class="d-lg-none"><a href="tel:+88005555555">8 800 555 55 55</a></li>
+                    <div class="line"></div>
+                    <ul class="header_menus d-flex justify-content-between align-items-center">
+                        <li class="active"><a href="#">Наверх</a></li>
+                        <li><a href="#">Продукт</a></li>
+                        <li><a href="#">Характеристики</a></li>
+                        <li><a href="#">О нас</a></li>
+                        <li><a href="#">Вопросы</a></li>
+                        <li><a href="#">Контакты</a></li>
                     </ul>
-                    <div class="header_phone">
-                        <a href="tel:+88005555555">8 800 555 55 55</a>
+                </div>
+            </header>
+            <div class="hero">
+                <div class="container">
+                    <div class="hero_logo">
+                        <img src="./assets/images/hero_logo.png" alt="">
+                    </div>
+                    <p class="hero_desc">
+                        Открой для себя технологию ярких красок
+                    </p>
+                    <div class="hero_bottom_img text-center ">
+                        <img src="./assets/images/icons/bottom_arrow.svg" alt="">
                     </div>
                 </div>
             </div>
-        </header>
+        </main>
+
+        <!-- description -->
+        <section class="description">
+            <div class="container">
+                <!-- proektor_block -->
+                <div class="proektor_block position-relative">
+                    <div class="swiper proektor_swiper">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide">
+                                <div class="proektor_slide_item d-flex justify-content-between align-items-center">
+                                    <div class="proektor_left">
+                                        <h3 class="swiper_name">Проектор FG 17</h3>
+                                        <p class="swiper_desc">
+                                            Чёткость . Качество . Дизайн
+                                        </p>
+                                        <div class="main_btn">
+                                            <a href="#">Подробнее</a>
+                                        </div>
+                                    </div>
+                                    <div class="proektor_slide_img">
+                                        <img src="./assets/images/proektor_img.png" alt="">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="proektor_slide_item d-flex justify-content-between align-items-center">
+                                    <div class="proektor_left">
+                                        <h3 class="swiper_name">Проектор FG 17</h3>
+                                        <p class="swiper_desc">
+                                            Чёткость . Качество . Дизайн
+                                        </p>
+                                        <div class="main_btn">
+                                            <a href="#">Подробнее</a>
+                                        </div>
+                                    </div>
+                                    <div class="proektor_slide_img">
+                                        <img src="./assets/images/proektor_img.png" alt="">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="proektor_slide_item d-flex justify-content-between align-items-center">
+                                    <div class="proektor_left">
+                                        <h3 class="swiper_name">Проектор FG 17</h3>
+                                        <p class="swiper_desc">
+                                            Чёткость . Качество . Дизайн
+                                        </p>
+                                        <div class="main_btn">
+                                            <a href="#">Подробнее</a>
+                                        </div>
+                                    </div>
+                                    <div class="proektor_slide_img">
+                                        <img src="./assets/images/proektor_img.png" alt="">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="pagination"></div>
+                </div>
+
+                <!-- desc_tab_block -->
+                <div class="desc_tab_block">
+                    <div class="tab_top d-flex align-items-center">
+                        <div class="tab_left_img">
+                            <img src="./assets/images/desc_img.png" alt="">
+                        </div>
+                        <div class="tab_navs">
+                            <ul class="tab_navigation">
+                                <li class="active"><a href="#">Описание</a></li>
+                                <li><a href="#">характеристики</a></li>
+                            </ul>
+                            <div class="tab_desc_item">
+                                <p class="tab_desc ">
+                                    Проектор FG 17 относится к категории портативных устройств для проецирования
+                                    изображения
+                                    на экран или другую поверхность. Этот проектор имеет ряд преимуществ, которые делают
+                                    его
+                                    привлекательным выбором для многих пользователей.
+                                </p>
+
+                                <div class="main_btn">
+                                    <a href="#">Узнать больше</a>
+                                </div>
+                            </div>
+
+                            <ul class="tab_ul_item tab_desc_item">
+                                <li>Яркость: 3200 люмен</li>
+                                <li>Разрешение: до 1080p (Full HD)</li>
+                                <li>Соотношение сторон: 16:9</li>
+                                <li>Контрастность: 2000:1</li>
+                                <li>Лампа: LED, срок службы до 50 000 часов</li>
+                                <li>Звук: встроенные динамики, мощностью 2 Вт</li>
+                                <li>Подключение: HDMI, USB, VGA, AV, SD-карта, Wi-Fi</li>
+                                <li>Размеры: 290 x 220 x 82 мм</li>
+                                <li>Вес: 1,6 кг</li>
+                            </ul>
+                        </div>
+
+                    </div>
+                    <div class="tab_content_wrapper">
+                        <div class="tab_content">
+                            <div class="tab_items d-flex align-items-center">
+                                <div class="tab_content_left">
+                                    <p class="tab_content_name">Подробное описание проектора</p>
+                                    <div class="content_desc_block d-flex flex-column">
+                                        <p>
+                                            Одной из основных особенностей проектора FG17 является его высокая яркость.
+                                            Благодаря световой мощности в 3200 люмен, этот проектор способен создавать
+                                            яркое
+                                            и четкое изображение даже в условиях небольшого освещения. Это делает его
+                                            подходящим для использования в различных условиях, включая домашние
+                                            кинотеатры,
+                                            конференц-залы и классные комнаты.
+                                        </p>
+                                        <p>
+                                            Другим важным преимуществом проектора FG17 является его высокое разрешение.
+                                            Этот
+                                            проектор способен воспроизводить изображения с разрешением до 1080p, что
+                                            обеспечивает высокое качество изображения и делает его подходящим для
+                                            просмотра
+                                            фильмов, видео и других мультимедийных материалов.
+                                        </p>
+                                    </div>
+                                    <a href="#" class="show_all">Раскрыть полностью</a>
+                                </div>
+                                <div class="tab_content_right">
+                                    <div class="more_img">
+                                        <img src="./assets/images/more_img.png" alt="">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="tab_content  ">
+                            <div class="tab_items d-flex align-items-center">
+                                <div class="tab_content_left">
+                                    <p class="tab_content_name">Подробное описание проектора</p>
+                                    <div class="content_desc_block d-flex flex-column">
+                                        <p>
+                                            Одной из основных особенностей проектора FG17 является его высокая яркость.
+                                            Благодаря световой мощности в 3200 люмен, этот проектор способен создавать
+                                            яркое
+                                            и четкое изображение даже в условиях небольшого освещения. Это делает его
+                                            подходящим для использования в различных условиях, включая домашние
+                                            кинотеатры,
+                                            конференц-залы и классные комнаты.
+                                        </p>
+                                        <p>
+                                            Другим важным преимуществом проектора FG17 является его высокое разрешение.
+                                            Этот
+                                            проектор способен воспроизводить изображения с разрешением до 1080p, что
+                                            обеспечивает высокое качество изображения и делает его подходящим для
+                                            просмотра
+                                            фильмов, видео и других мультимедийных материалов.
+                                        </p>
+                                        <p>
+                                            Кроме того, проектор FG17 имеет встроенные динамики, которые обеспечивают
+                                            хорошее качество звука. Это позволяет использовать проектор без
+                                            необходимости
+                                            подключения внешних акустических систем, что упрощает его использование и
+                                            делает
+                                            его более портативным.
+                                        </p>
+                                        <p>
+                                            Проектор FG17 также оснащен рядом портов для подключения различных
+                                            устройств,
+                                            включая HDMI, USB, VGA и другие. Это позволяет подключать к проектору
+                                            различные
+                                            источники сигнала, такие как ноутбуки, планшеты, смартфоны и другие
+                                            устройства.
+                                        </p>
+                                        <p>
+                                            Проектор FG17 также оснащен рядом портов для подключения различных
+                                            устройств,
+                                            включая HDMI, USB, VGA и другие. Это позволяет подключать к проектору
+                                            различные
+                                            источники сигнала, такие как ноутбуки, планшеты, смартфоны и другие
+                                            устройства.
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="tab_content_right">
+                                    <div class="more_img">
+                                        <img src="./assets/images/more_img.png" alt="">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+            </div>
+        </section>
+
+        <!-- partner section -->
+        <section class="partner overflow-hidden">
+            <div class="partner_logo">
+                <img src="./assets/images/partner_logo.png" alt="">
+            </div>
+            <div class="container  ">
+                <div class="partner_block ">
+                    <h3 class="partner_title">
+                        Ваш надежный партнер в мире потребительской электроники и умного телевидения.
+                    </h3>
+                    <p class="partner_desc">
+                        Проекторы, Smart-tv приставки и аксессуары обеспечат яркое и четкое изображение в любой
+                        ситуации, а
+                        умное программное обеспечение GOOGLE сделает доступ к библиотекам с видео и музыкой,
+                        стриминговым
+                        сервисам быстрым и удобным.
+                    </p>
+
+                    <div class="lighter_img">
+                        <img src="./assets/images/partner_img.png" alt="">
+                    </div>
+                </div>
+
+            </div>
+        </section>
 
         <!-- footer -->
         <footer>
