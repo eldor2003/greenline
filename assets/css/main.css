@@ -240,6 +240,184 @@ main {
   top: -125px;
 }
 
+.faq {
+  padding: 130px;
+}
+.faq .faq_title {
+  color: rgb(0, 0, 0);
+  font-size: 28px;
+  font-weight: 700;
+  line-height: 34px;
+  text-transform: uppercase;
+  margin-bottom: 70px;
+}
+.faq .faq_block {
+  gap: 15px;
+}
+.faq .faq_block_item {
+  flex: 1;
+}
+.faq .faq_item {
+  flex: 1;
+  padding: 20px 0;
+}
+.faq .faq_top {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-bottom: 1px solid rgb(225, 232, 233);
+  padding-bottom: 10px;
+}
+.faq .faq_top.active {
+  padding-bottom: 0;
+  border: none;
+}
+.faq .faq_name {
+  color: rgb(0, 0, 0);
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 24px;
+  text-transform: uppercase;
+}
+.faq .faq_arrow {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  color: rgb(7, 97, 69);
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 24px;
+  text-transform: uppercase;
+  border-radius: 10px;
+  background: rgb(225, 232, 233);
+  width: 39px;
+  height: 39px;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+          user-select: none;
+  transition: all ease-in 0.2s;
+  cursor: pointer;
+}
+.faq .faq_arrow:hover {
+  background-color: #076145;
+}
+.faq .faq_arrow:hover span {
+  color: #fff;
+}
+.faq .faq_arrow span {
+  transition: all ease-in 0.2s;
+}
+.faq .faq_arrow span:last-child {
+  display: none;
+}
+.faq .faq_arrow.active {
+  border-radius: 10px 10px 0px 0px;
+}
+.faq .faq_arrow.active span:first-child {
+  display: none;
+}
+.faq .faq_arrow.active span:last-child {
+  display: block;
+}
+.faq .faq_body {
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 17px;
+  padding: 18px 18px 50px 18px;
+  border-radius: 10px 0px 10px 10px;
+  background: rgb(225, 232, 233);
+}
+.faq .faq_body a {
+  color: #076145;
+  text-decoration: underline;
+}
+
+.contact {
+  padding: 0 0 130px 0;
+}
+.contact .contact_block {
+  gap: 30px;
+  padding-top: 130px;
+  border-top: 1px solid rgb(225, 232, 233);
+}
+.contact .contact_title {
+  color: rgb(0, 0, 0);
+  font-size: 28px;
+  font-weight: 700;
+  line-height: 34px;
+  text-transform: uppercase;
+  margin-bottom: 35px;
+}
+.contact .contact_details_block {
+  gap: 40px;
+  margin-bottom: 50px;
+}
+.contact .contact_details_item {
+  display: flex;
+  gap: 12px;
+}
+.contact .detail_name {
+  color: rgb(0, 0, 0);
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 20px;
+  text-transform: uppercase;
+  margin-bottom: 12px;
+}
+.contact .detail_text {
+  color: rgb(0, 0, 0);
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 22px;
+}
+.contact .detail_text a {
+  color: rgb(0, 0, 0);
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 22px;
+}
+.contact .social_block {
+  padding: 20px;
+  border-radius: 10px;
+  background: rgb(225, 232, 233);
+}
+.contact .social_name {
+  color: rgb(0, 0, 0);
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 20px;
+  text-transform: uppercase;
+}
+.contact .social_icons {
+  gap: 7px;
+}
+
+footer .footer_top {
+  padding-bottom: 35px;
+  margin-bottom: 25px;
+  border-bottom: 3px solid #006347;
+}
+footer .footer_position {
+  color: rgb(0, 0, 0);
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 17px;
+  text-transform: uppercase;
+}
+footer .footer_bottom_title {
+  color: rgb(0, 0, 0);
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 17px;
+  text-transform: uppercase;
+}
+footer .footer_tel {
+  gap: 6px;
+}
+footer .footer_bottom {
+  margin-bottom: 67px;
+}
+
 html,
 body,
 div,

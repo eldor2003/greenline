@@ -76,4 +76,44 @@ $(document).ready(function () {
 		$(".tab_content").eq(index).show();
 		$(".tab_desc_item").eq(index).show();
 	});
+
+	// faq
+	$(".faq_body").slideUp();
+	$(".faq_top").on("click", function (e) {
+		e.preventDefault();
+		$(this).toggleClass("active");
+		$(this).find(".faq_arrow").toggleClass("active");
+		$(this).parent().find(".faq_body").slideToggle(400);
+		$(this)
+			.parent(".faq_item")
+			.prevAll(".faq_item")
+			.find(".faq_body")
+			.slideUp();
+		$(this)
+			.parent(".faq_item")
+			.prevAll(".faq_item")
+			.find(".faq_arrow")
+			.removeClass("active");
+		$(this)
+			.parent(".faq_item")
+			.nextAll(".faq_item")
+			.find(".faq_body")
+			.slideUp();
+		$(this)
+			.parent(".faq_item")
+			.nextAll(".faq_item")
+			.find(".faq_arrow")
+			.removeClass("active");
+
+		$(this)
+			.parent(".faq_item")
+			.prevAll(".faq_item")
+			.find(".faq_head")
+			.removeClass("active");
+		$(this)
+			.parent(".faq_item")
+			.nextAll(".faq_item")
+			.find(".faq_top")
+			.removeClass("active");
+	});
 });
