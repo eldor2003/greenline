@@ -69,6 +69,8 @@ main {
   margin-bottom: 120px;
 }
 .hero .hero_bottom_img {
+  display: block;
+  text-align: center;
   cursor: pointer;
 }
 
@@ -613,6 +615,7 @@ html::-webkit-scrollbar-thumb {
 body {
   font-family: "Montserrat", sans-serif;
   background: #fff;
+  scroll-behavior: smooth;
 }
 
 .wrapper {
