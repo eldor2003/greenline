@@ -113,7 +113,7 @@ main {
 }
 .description .swiper-pagination-vertical.swiper-pagination-bullets {
   position: absolute;
-  right: 15px;
+  right: 20px;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -868,10 +868,16 @@ body {
     text-transform: uppercase;
     border-radius: 86.9px;
     background: rgb(0, 99, 71);
+    margin: 0 auto;
   }
   .pro_button {
     text-align: center;
     transform: translate(0, -3px);
+    margin-bottom: 15px;
+  }
+  .swiper-horizontal > .swiper-pagination-bullets,
+  .swiper-pagination-bullets.swiper-pagination-horizontal {
+    justify-content: center;
   }
   .proektor_img {
     text-align: center;
@@ -960,6 +966,11 @@ body {
   .container {
     max-width: 100%;
     padding: 0 15px;
+  }
+  .swiper-horizontal > .swiper-pagination-bullets,
+  .swiper-pagination-bullets.swiper-pagination-horizontal {
+    justify-content: center;
+    position: absolute;
   }
   .contact .contact_title {
     text-align: center;

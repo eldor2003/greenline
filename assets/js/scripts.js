@@ -48,23 +48,6 @@ $(document).ready(function () {
 	}
 	moveLine();
 
-	// proektor swiper
-	const proektor_swiper = new Swiper(".proektor_swiper", {
-		// Default parameters
-		loop: true,
-		// direction: "horizontal",
-		direction: "vertical",
-		grabCursor: true,
-		// autoplay: {
-		// 	delay: 500,
-		// },
-		// allowTouchMove: false,
-		// Default parameters
-		pagination: {
-			el: ".pagination",
-			clickable: true,
-		},
-	});
 	// mobile swiper
 	const proektor_mobile_swiper = new Swiper(".proektor_mobile_swiper", {
 		// Default parameters
@@ -78,6 +61,23 @@ $(document).ready(function () {
 		// Default parameters
 		pagination: {
 			el: ".pagination",
+			clickable: true,
+		},
+	});
+	// proektor swiper
+	const proektor_swiper = new Swiper(".proektor_swiper", {
+		// Default parameters
+		loop: true,
+		// direction: "horizontal",
+		direction: "vertical",
+		grabCursor: true,
+		// autoplay: {
+		// 	delay: 500,
+		// },
+		// allowTouchMove: false,
+		// Default parameters
+		pagination: {
+			el: ".pagination_main",
 			clickable: true,
 		},
 	});
