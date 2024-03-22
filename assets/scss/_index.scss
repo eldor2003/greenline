@@ -122,6 +122,9 @@ main {
 		right: 15px;
 		display: flex;
 		flex-direction: column;
+		justify-content: center;
+		align-items: end;
+		margin-left: -15px;
 	}
 	.swiper-pagination-bullet {
 		border: 1px solid rgb(0, 99, 71);
@@ -223,7 +226,6 @@ main {
 // partner
 .partner {
 	padding: 133px 0;
-	margin-bottom: 130px;
 	background: rgb(231, 233, 232);
 	.partner_block {
 		position: relative;
@@ -231,6 +233,10 @@ main {
 	.partner_logo {
 		text-align: center;
 		margin-bottom: 70px;
+		img {
+			width: 98%;
+			margin: 0 auto;
+		}
 	}
 	.partner_title {
 		color: rgb(0, 0, 0);
@@ -258,7 +264,7 @@ main {
 
 // faq
 .faq {
-	padding: 130px;
+	padding: 130px 0;
 	.faq_title {
 		color: rgb(0, 0, 0);
 		font-size: 28px;

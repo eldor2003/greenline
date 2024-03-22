@@ -51,6 +51,9 @@
                         <li><a href="#about">О нас</a></li>
                         <li><a href="#question">Вопросы</a></li>
                         <li><a href="#contact">Контакты</a></li>
+                        <li class="d-lg-none close">
+                            <img src="./assets/images/icons/close.svg" alt="">
+                        </li>
                     </ul>
                 </div>
             </header>
@@ -126,6 +129,50 @@
                             </div>
                         </div>
                     </div>
+                    <div class="swiper proektor_mobile_swiper d-lg-none">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide">
+                                <div class="pro_item">
+                                    <p class="pro_name">Проектор FG 17</p>
+                                    <p class="pro_desc">
+                                        Чёткость . Качество . Дизайн
+                                    </p>
+                                    <div class="proektor_img">
+                                        <img src="./assets/images/mobile_proektor.png" alt="">
+                                    </div>
+                                    <div class="pro_button">
+                                        <a href="#" class="pro_btn">Подробнее</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="pro_item">
+                                    <p class="pro_name">Проектор FG 17</p>
+                                    <p class="pro_desc">
+                                        Чёткость . Качество . Дизайн
+                                    </p>
+                                    <div class="proektor_img">
+                                        <img src="./assets/images/mobile_proektor.png" alt="">
+                                    </div>
+                                    <div class="pro_button">
+                                        <a href="#" class="pro_btn">Подробнее</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="pro_item">
+                                    <p class="pro_name">Проектор FG 17</p>
+                                    <p class="pro_desc">
+                                        Чёткость . Качество . Дизайн
+                                    </p>
+                                    <div class="proektor_img">
+                                        <img src="./assets/images/mobile_proektor.png" alt="">
+                                    </div>
+                                    <a href="#" class="pro_btn">Подробнее</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                     <div class="pagination"></div>
                 </div>
 
@@ -140,6 +187,13 @@
                                 <li class="active"><a href="#">Описание</a></li>
                                 <li><a href="#">характеристики</a></li>
                             </ul>
+                            <div class="custom-select d-sm-none">
+                                <select>
+                                    <option value="0">Описание</option>
+                                    <option value="1">Описание</option>
+                                    <option value="2">характеристики</option>
+                                </select>
+                            </div>
                             <div class="tab_desc_item">
                                 <p class="tab_desc ">
                                     Проектор FG 17 относится к категории портативных устройств для проецирования
@@ -171,8 +225,12 @@
                     <div class="tab_content_wrapper">
                         <div class="tab_content">
                             <div class="tab_items d-flex align-items-center">
+
                                 <div class="tab_content_left">
                                     <p class="tab_content_name">Подробное описание проектора</p>
+                                    <div class="more_img text-center d-md-none">
+                                        <img src="./assets/images/more_img.png" alt="">
+                                    </div>
                                     <div class="content_desc_block d-flex flex-column">
                                         <p>
                                             Одной из основных особенностей проектора FG17 является его высокая яркость.
@@ -194,7 +252,7 @@
                                     </div>
                                     <a href="#" class="show_all">Раскрыть полностью</a>
                                 </div>
-                                <div class="tab_content_right">
+                                <div class="tab_content_right d-none d-md-block">
                                     <div class="more_img">
                                         <img src="./assets/images/more_img.png" alt="">
                                     </div>
@@ -206,6 +264,10 @@
                             <div class="tab_items d-flex align-items-center">
                                 <div class="tab_content_left">
                                     <p class="tab_content_name">Подробное описание проектора</p>
+
+                                    <div class="more_img">
+                                        <img src="./assets/images/more_img.png" alt="">
+                                    </div>
                                     <div class="content_desc_block d-flex flex-column">
                                         <p>
                                             Одной из основных особенностей проектора FG17 является его высокая яркость.
@@ -250,7 +312,7 @@
                                         </p>
                                     </div>
                                 </div>
-                                <div class="tab_content_right">
+                                <div class="tab_content_right d-none d-md-block">
                                     <div class="more_img">
                                         <img src="./assets/images/more_img.png" alt="">
                                     </div>
@@ -267,10 +329,14 @@
         <!-- partner section -->
         <section class="partner overflow-hidden" id="about">
             <div class="partner_logo">
-                <img src="./assets/images/partner_logo.png" alt="">
+                <img class="d-none d-sm-block" src="./assets/images/partner_logo.png" alt="">
+                <img class="d-sm-none" src="./assets/images/mobile_logo_white.png" alt="">
             </div>
-            <div class="container  ">
+            <div class="container">
                 <div class="partner_block ">
+                    <div class="lighter_img">
+                        <img src="./assets/images/partner_img.png" alt="">
+                    </div>
                     <h3 class="partner_title">
                         Ваш надежный партнер в мире потребительской электроники и умного телевидения.
                     </h3>
@@ -282,9 +348,7 @@
                         сервисам быстрым и удобным.
                     </p>
 
-                    <div class="lighter_img">
-                        <img src="./assets/images/partner_img.png" alt="">
-                    </div>
+
                 </div>
 
             </div>
@@ -457,7 +521,7 @@
                     </div>
                     <div class="contact_map">
                         <script type="text/javascript" charset="utf-8" async
-                            src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3A2dd8efaf9e4fdd7b6d3c5fd8fbb8cf68ebe564a2207acf3b61429883f990a384&amp;width=691&amp;height=461&amp;lang=en_FR&amp;scroll=true"></script>
+                            src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3A2dd8efaf9e4fdd7b6d3c5fd8fbb8cf68ebe564a2207acf3b61429883f990a384&amp;width=691&amp;height=461&amp;lang=en_FR&amp;scroll=false"></script>
                     </div>
                 </div>
             </div>
@@ -475,6 +539,9 @@
                     <a href="#" class="footer_position">Наверх</a>
                 </div>
                 <div class="footer_bottom d-flex justify-content-between align-items-center">
+                    <a href="#" class="rule footer_mobile_rule footer_bottom_title d-sm-none">
+                        Наверх
+                    </a>
                     <a href="#" class="rule footer_bottom_title">
                         Политика конфиденциальности
                     </a>
