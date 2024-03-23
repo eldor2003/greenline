@@ -442,3 +442,84 @@ footer {
 		margin-bottom: 67px;
 	}
 }
+
+// modal
+.modal {
+	.modal-dialog {
+		max-width: 610px;
+	}
+	.modal-content {
+		border-radius: 30px;
+		background: rgb(231, 233, 232);
+		padding: 85px 95px;
+	}
+	.modal_title {
+		color: rgb(0, 0, 0);
+		font-size: 42px;
+		font-weight: 700;
+		line-height: 51px;
+		text-transform: uppercase;
+		margin-bottom: 10px;
+	}
+	.modal_desc {
+		color: rgb(0, 0, 0);
+		font-size: 16px;
+		font-weight: 400;
+		line-height: 20px;
+		max-width: 450px;
+		margin: 0 auto 35px auto;
+		text-align: center;
+	}
+	.modal_form {
+		gap: 30px;
+		button {
+			padding: 15px 40px;
+			border-radius: 86.9px;
+			color: rgb(255, 255, 255);
+			font-size: 17.38px;
+			font-weight: 700;
+			line-height: 21px;
+			text-transform: uppercase;
+			background: rgb(0, 99, 71);
+			border: none;
+		}
+	}
+	.input_block {
+		gap: 5px;
+		input {
+			width: 100%;
+			outline: none;
+			border-radius: 86.9px;
+			height: 60px;
+			padding-left: 30px;
+			color: rgb(120, 113, 113);
+			font-size: 16px;
+			font-weight: 400;
+			line-height: 20px;
+			background: rgb(255, 255, 255);
+			border: none;
+			&::placeholder {
+				color: rgb(179, 179, 179);
+				font-size: 16px;
+			}
+		}
+	}
+	.form_rule {
+		color: rgb(126, 126, 126);
+		font-size: 12px;
+		font-weight: 400;
+		line-height: 15px;
+		text-align: center;
+	}
+	.btn-close {
+		position: absolute;
+		top: 21px;
+		z-index: 4;
+		right: 21px;
+	}
+	.btn-close:focus {
+		outline: 0;
+		box-shadow: unset;
+		opacity: 1;
+	}
+}

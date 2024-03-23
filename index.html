@@ -552,13 +552,40 @@
                     <p class="green_text footer_bottom_title">
                         Greenline 2024©
                     </p>
-                    <div class="footer_tel footer_bottom_title d-flex align-items-center">
+                    <a href="#" data-bs-toggle="modal" data-bs-target="#exampleModal"
+                        class="footer_tel footer_bottom_title d-flex align-items-center">
                         <img src="./assets/images/icons/footer_phone.svg" alt="">
                         <span>Обратная связь</span>
-                    </div>
+                    </a>
                 </div>
             </div>
         </footer>
+
+
+        <!-- Modal -->
+        <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content ">
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    <h3 class="modal_title text-center">Обратная связь</h3>
+                    <p class="modal_desc">
+                        Заполните форму ниже и мы свяжемся с Вами в течение 5 минут
+                    </p>
+                    <form class="modal_form d-flex flex-column">
+                        <div class="input_block d-flex flex-column">
+                            <input type="text" placeholder="Ваше имя">
+                            <input type="tel" placeholder="Ваш номер телефона">
+                        </div>
+                        <div class="send_btn text-center">
+                            <button type="submit">Отправить</button>
+                        </div>
+                        <a href="#" class="form_rule">
+                            Нажимая кнопку отправить вы соглашаетесь на обработку Ваших персональных данных
+                        </a>
+                    </form>
+                </div>
+            </div>
+        </div>
 
     </div>
     <!-- Bootstrap -->
