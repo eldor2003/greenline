@@ -10,6 +10,9 @@ main {
 .header .header_logo {
   gap: 33px;
 }
+.header .fade_block {
+  display: none;
+}
 .header .header_phone {
   gap: 7px;
 }
@@ -1013,6 +1016,9 @@ body {
   }
   .modal .modal-content {
     padding: 60px 25px;
+  }
+  .header .fade_block {
+    display: block !important;
   }
   .hero .hero_logo {
     margin-bottom: 10px;
