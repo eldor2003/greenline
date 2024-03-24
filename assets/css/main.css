@@ -19,6 +19,61 @@ main {
 .header .header_top {
   margin-bottom: 37px;
 }
+.header .nice-select {
+  padding: 0px 21px;
+  height: unset;
+  width: 250px;
+  box-sizing: border-box;
+  border: 1px solid rgb(7, 97, 69);
+  border-radius: 57.7px;
+  background: rgb(255, 255, 255);
+}
+.header .nice-select {
+  border: 1px solid rgb(7, 97, 69);
+  border-radius: 57px;
+  background: rgb(255, 255, 255);
+}
+.header .nice-select:after {
+  border: none;
+  content: "";
+  height: 6px;
+  margin-top: -4px;
+  right: 18px;
+  top: 50%;
+  width: 8px;
+  transform: unset;
+  transform-origin: 0;
+  background: url(../images/icons/select_arrow.svg);
+}
+.header .nice-select.open {
+  border-radius: 20px 20px 0 0;
+}
+.header .nice-select.open::after {
+  transform: rotateX(-180deg);
+}
+.header .nice-select .current {
+  color: rgb(0, 0, 0);
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 17px;
+}
+.header .nice-select .option {
+  color: rgb(0, 0, 0);
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 17px;
+  text-decoration-line: underline;
+  display: flex;
+  align-items: center;
+}
+.header .nice-select .option.selected {
+  display: none;
+}
+.header .nice-select .list {
+  padding: 5px 0;
+  margin-top: 0;
+  border-radius: 0 0 20px 20px;
+}
 .header .header_phone a {
   color: rgb(255, 255, 255);
   font-size: 32px;
@@ -1020,6 +1075,9 @@ body {
   .header .fade_block {
     display: block !important;
   }
+  .header .nice-select {
+    width: 200px;
+  }
   .hero .hero_logo {
     margin-bottom: 10px;
   }
@@ -1108,6 +1166,18 @@ body {
   .swiper-pagination-bullets.swiper-pagination-horizontal {
     justify-content: center;
     position: absolute;
+  }
+  .header .nice-select {
+    width: unset;
+    line-height: 30px;
+    padding-right: 50px;
+  }
+  .header .nice-select::after {
+    margin-top: -2px;
+  }
+  .header .nice-select .option {
+    display: flex;
+    justify-content: center;
   }
   .contact .contact_title {
     text-align: center;

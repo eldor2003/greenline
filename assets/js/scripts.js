@@ -136,6 +136,10 @@ $(document).ready(function () {
 			.find(".faq_top")
 			.removeClass("active");
 	});
+	// nice select
+	$(document).ready(function () {
+		$("select").niceSelect();
+	});
 
 	// custom select
 	var x, i, j, l, ll, selElmnt, a, b, c;

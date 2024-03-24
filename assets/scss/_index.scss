@@ -18,6 +18,61 @@ main {
 	.header_top {
 		margin-bottom: 37px;
 	}
+	.nice-select {
+		padding: 0px 21px;
+		height: unset;
+		width: 250px;
+		box-sizing: border-box;
+		border: 1px solid rgb(7, 97, 69);
+		border-radius: 57.7px;
+		background: rgb(255, 255, 255);
+	}
+	.nice-select {
+		border: 1px solid rgb(7, 97, 69);
+		border-radius: 57px;
+		background: rgb(255, 255, 255);
+		&:after {
+			border: none;
+			content: "";
+			height: 6px;
+			margin-top: -4px;
+			right: 18px;
+			top: 50%;
+			width: 8px;
+			transform: unset;
+			transform-origin: 0;
+			background: url(../images/icons/select_arrow.svg);
+		}
+		&.open {
+			&::after {
+				transform: rotateX(-180deg);
+			}
+			border-radius: 20px 20px 0 0;
+		}
+		.current {
+			color: rgb(0, 0, 0);
+			font-size: 14px;
+			font-weight: 400;
+			line-height: 17px;
+		}
+		.option {
+			color: rgb(0, 0, 0);
+			font-size: 14px;
+			font-weight: 400;
+			line-height: 17px;
+			text-decoration-line: underline;
+			display: flex;
+			align-items: center;
+			&.selected {
+				display: none;
+			}
+		}
+		.list {
+			padding: 5px 0;
+			margin-top: 0;
+			border-radius: 0 0 20px 20px;
+		}
+	}
 	.header_phone {
 		a {
 			color: rgb(255, 255, 255);

@@ -208,6 +208,9 @@
 	.header .fade_block {
 		display: block !important;
 	}
+	.header .nice-select {
+		width: 200px;
+	}
 	.hero .hero_logo {
 		margin-bottom: 10px;
 		img {
@@ -291,6 +294,19 @@
 	.swiper-pagination-bullets.swiper-pagination-horizontal {
 		justify-content: center;
 		position: absolute;
+	}
+
+	.header .nice-select {
+		width: unset;
+		line-height: 30px;
+		padding-right: 50px;
+		&::after {
+			margin-top: -2px;
+		}
+		.option {
+			display: flex;
+			justify-content: center;
+		}
 	}
 	.contact .contact_title {
 		text-align: center;
